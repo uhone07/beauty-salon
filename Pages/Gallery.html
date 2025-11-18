@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penelope Beauty Studio - Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/gallery.CSS">
+</head>
+<body data-page="gallery">
+    <div class="sparkle-bg"></div>
+
+    <header>
+        <div class="container">
+            <div class="logo logo-font">
+                Penelope
+                <svg class="logo-sparkle" xmlns="http://www.w3.org/2000/svg " viewBox="0 0 24 24">
+                    <path d="M12 0L9.5 8L0 9.5L8 12L9.5 21.5L12 13.5L20 12L12 9.5L14.5 0ZM15 15.5L13.5 17L12 18.5L10.5 17L9 15.5L10.5 14L12 12.5L13.5 14L15 15.5Z"/>
+                </svg>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="enquiry.html">Enquiry & Booking</a></li>
+                    <li><a href="#" id="book-now-btn" class="button">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Gallery Section -->
+        <section id="gallery" class="visible">
+            <div class="container">
+                <h2>Our Gallery</h2>
+                <p class="subtitle">Explore our stunning collection of beauty transformations and studio moments. Each image tells a story of confidence and elegance.</p>
+                
+                <!-- Filter Buttons -->
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="makeup">Makeup</button>
+                    <button class="filter-btn" data-filter="hair">Hair Styling</button>
+                    <button class="filter-btn" data-filter="nails">Nails</button>
+                    <button class="filter-btn" data-filter="facials">Facials</button>
+                    <button class="filter-btn" data-filter="studio">Studio</button>
+                </div>
+                
+                <!-- Gallery Grid -->
+                <div class="gallery-grid">
+                    <!-- Makeup Images -->
+                    <div class="gallery-item" data-category="makeup">
+                        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Bridal Makeup">
+                        <div class="gallery-overlay">
+                            <h3>Bridal Makeup</h3>
+                            <p>Elegant wedding day look</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="makeup">
+                        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Evening Glam">
+                        <div class="gallery-overlay">
+                            <h3>Evening Glam</h3>
+                            <p>Perfect for special occasions</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Hair Styling Images -->
+                    <div class="gallery-item" data-category="hair">
+                        <img src="https://images.unsplash.com/photo-1560869713-7d9aea7ec9d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Elegant Updo">
+                        <div class="gallery-overlay">
+                            <h3>Elegant Updo</h3>
+                            <p>Sophisticated hairstyle for events</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="hair">
+                        <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Color Transformation">
+                        <div class="gallery-overlay">
+                            <h3>Color Transformation</h3>
+                            <p>Vibrant hair coloring service</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Nails Images -->
+                    <div class="gallery-item" data-category="nails">
+                        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Nail Art">
+                        <div class="gallery-overlay">
+                            <h3>Creative Nail Art</h3>
+                            <p>Custom designs for every personality</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="nails">
+                        <img src="https://images.unsplash.com/photo-1607778833979-84d87c051781?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Classic Manicure">
+                        <div class="gallery-overlay">
+                            <h3>Classic Manicure</h3>
+                            <p>Timeless elegance for your hands</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Facials Images -->
+                    <div class="gallery-item" data-category="facials">
+                        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Relaxing Facial">
+                        <div class="gallery-overlay">
+                            <h3>Relaxing Facial</h3>
+                            <p>Rejuvenating treatment for glowing skin</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="facials">
+                        <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Skin Treatment">
+                        <div class="gallery-overlay">
+                            <h3>Skin Treatment</h3>
+                            <p>Specialized care for your skin type</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Studio Images -->
+                    <div class="gallery-item" data-category="studio">
+                        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Our Studio">
+                        <div class="gallery-overlay">
+                            <h3>Our Beautiful Studio</h3>
+                            <p>Relaxing and elegant environment</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="studio">
+                        <img src="https://images.unsplash.com/photo-1595475884562-073c30d45670?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Workstation">
+                        <div class="gallery-overlay">
+                            <h3>Professional Workstation</h3>
+                            <p>State-of-the-art equipment</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional Images -->
+                    <div class="gallery-item" data-category="makeup">
+                        <img src="https://images.unsplash.com/photo-1512496015859-f55c42f300eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Natural Makeup">
+                        <div class="gallery-overlay">
+                            <h3>Natural Makeup</h3>
+                            <p>Enhancing your natural beauty</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="hair">
+                        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Hair Styling">
+                        <div class="gallery-overlay">
+                            <h3>Professional Styling</h3>
+                            <p>Creating your perfect look</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="enquiry.html" class="button">Book Your Transformation</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <div class="lightbox-nav">
+            <button id="prev-btn">&lt;</button>
+            <button id="next-btn">&gt;</button>
+        </div>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+            <div class="lightbox-caption" id="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div>
+                <h4 class="footer-heading">Penelope Beauty Studio</h4>
+                <p>Pink, magical, and full of girly vibes! Let us help you shine 💖✨</p>
+            </div>
+            <div>
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="enquiry.html">Enquiry & Booking</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-heading">Follow Us</h4>
+                <div class="social-links">
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com " target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/ec407a/facebook--v1.png " alt="Facebook" width="30">
+                    </a>
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com " target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/ec407a/instagram-new.png " alt="Instagram" width="30">
+                    </a>
+                    <!-- Twitter -->
+                    <a href="https://www.twitter.com " target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/ec407a/twitter.png " alt="Twitter" width="30">
+                    </a>
+                    <!-- TikTok -->
+                    <a href="https://www.tiktok.com " target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/ec407a/tiktok.png " alt="TikTok" width="30">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">&copy; 2025 Penelope Beauty Studio. All rights reserved.</div>
+    </footer>
+
+    <script>
+        // JavaScript for the section fade-in animation
+        const sections = document.querySelectorAll('section');
+        const options = {
+            root: null,
+            threshold: 0.1,
+            rootMargin: '0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // JavaScript to highlight the active link in the navigation
+        document.addEventListener("DOMContentLoaded", function() {
+            const navLinks = document.querySelectorAll('nav ul li a');
+            const currentPage = document.body.getAttribute('data-page') + '.html';
+            
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Gallery Filtering Functionality
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                button.classList.add('active');
+                
+                const filterValue = button.getAttribute('data-filter');
+                
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 10);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Lightbox Functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxCaption = document.getElementById('lightbox-caption');
+        const closeLightbox = document.querySelector('.close-lightbox');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+
+        let currentImageIndex = 0;
+        const images = Array.from(galleryItems);
+
+        // Open lightbox when clicking on a gallery item
+        galleryItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                currentImageIndex = index;
+                updateLightbox();
+                lightbox.style.display = 'flex';
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+        });
+
+        // Close lightbox
+        closeLightbox.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Re-enable scrolling
+        });
+
+        // Close lightbox when clicking outside the image
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Navigation between images
+        prevBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+            updateLightbox();
+        });
+
+        nextBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            updateLightbox();
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (lightbox.style.display === 'flex') {
+                if (e.key === 'Escape') {
+                    lightbox.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                } else if (e.key === 'ArrowLeft') {
+                    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+                    updateLightbox();
+                } else if (e.key === 'ArrowRight') {
+                    currentImageIndex = (currentImageIndex + 1) % images.length;
+                    updateLightbox();
+                }
+            }
+        });
+
+        // Update lightbox content
+        function updateLightbox() {
+            const currentImage = images[currentImageIndex];
+            const imgSrc = currentImage.querySelector('img').src;
+            const caption = currentImage.querySelector('h3').textContent;
+            
+            lightboxImg.src = imgSrc;
+            lightboxCaption.textContent = caption;
+        }
+
+        // Booking Modal Functionality (if needed)
+        const bookNowBtn = document.getElementById('book-now-btn');
+        
+        if (bookNowBtn) {
+            bookNowBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.location.href = 'enquiry.html';
+            });
+        }
+    </script>
+</body>
+</html>

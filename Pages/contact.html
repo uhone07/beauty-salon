@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Penelope Beauty Studio - Contact</title>
+    <!-- Using a bold, modern font for a strong and vibrant feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../Css/contact.CSS">
+</head>
+<body data-page="contact">
+    <div class="sparkle-bg"></div>
+
+    <header>
+        <div class="container">
+            <div class="logo logo-font">
+                Penelope
+                <svg class="logo-sparkle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 0L9.5 8L0 9.5L8 12L9.5 21.5L12 13.5L20 12L12 9.5L14.5 0ZM15 15.5L13.5 17L12 18.5L10.5 17L9 15.5L10.5 14L12 12.5L13.5 14L15 15.5Z"/>
+                </svg>
+            </div>
+            <nav>
+                <ul>
+                    <!-- Updated for multi-page navigation -->
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="enquiry.html">Enquiry & Booking</a></li>
+                    <li><a href="#" id="book-now-btn" class="button">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Contact Section -->
+        <section id="contact" class="visible">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p class="subtitle">We'd love to hear from you. Fill out the form below or find us at our studio. Our team is ready to answer your questions.</p>
+                
+                <div id="success-message" class="success-message">
+                    Thank you for your message! We'll get back to you soon.
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-form">
+                        <form id="contact-form" action="#" method="post" novalidate>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name">
+                            <span id="name-error" class="error"></span>
+
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                            <span id="email-error" class="error"></span>
+
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject">
+                            <span id="subject-error" class="error"></span>
+                            
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message"></textarea>
+                            <span id="message-error" class="error"></span>
+
+                            <button type="submit" class="button">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-info-block">
+                        <h3>Our Details</h3>
+                        <div class="contact-info-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M12 2a8 8 0 0 1 7.27 11.27L12 21.5l-7.27-8.23A8 8 0 0 1 12 2z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <p>52 Kerk Street, Polokwane Central</p>
+                        </div>
+                        <div class="contact-info-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            <p>info@penelopebeauty.com</p>
+                        </div>
+                        <div class="contact-info-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2.06 15.15 15.15 0 0 1-5.6-1.55 2 2 0 0 1-1.34-2.27c.1-.4.24-.8.4-1.19.16-.39.34-.78.53-1.17l-.84-.84a12 12 0 0 0-4.51-4.51l-.84-.84c-.39.19-.78.37-1.17.53-.4.16-.8.3-1.19.4a2 2 0 0 1-2.27-1.34 15.15 15.15 0 0 1-1.55-5.6A2 2 0 0 1 3.08 2H6a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-1a10 10 0 0 0 10 10h1a2 2 0 0 1 2-2v-2a2 2 0 0 1 2-2z"/></svg>
+                            <p>+1 (234) 567-890</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <!-- Updated map location to 52 Kerk Street Polokwane Central -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3868.564692260123!2d29.459579315347935!3d-23.896097684521384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec6c9f513f8dd1f%3A0xf5807fa1fc2b59d8!2s52%20Kerk%20St%2C%20Polokwane%20Central%2C%20Polokwane%2C%200699%2C%20South%20Africa!5e0!3m2!1sen!2s!4v1612450597375!5m2!1sen!2s" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Book an Appointment</h2>
+            <form id="booking-form" class="booking-form">
+                <label for="booking-name">Full Name</label>
+                <input type="text" id="booking-name" name="booking-name" required>
+                <span id="booking-name-error" class="error"></span>
+
+                <label for="booking-email">Email</label>
+                <input type="email" id="booking-email" name="booking-email" required>
+                <span id="booking-email-error" class="error"></span>
+
+                <label for="booking-phone">Phone Number</label>
+                <input type="tel" id="booking-phone" name="booking-phone" required>
+                <span id="booking-phone-error" class="error"></span>
+
+                <label for="booking-service">Service</label>
+                <select id="booking-service" name="booking-service" required>
+                    <option value="">Select a service</option>
+                    <option value="facial">Facial Treatment</option>
+                    <option value="manicure">Manicure</option>
+                    <option value="pedicure">Pedicure</option>
+                    <option value="makeup">Makeup Application</option>
+                    <option value="hair">Hair Styling</option>
+                    <option value="massage">Relaxing Massage</option>
+                    <option value="other">Other</option>
+                </select>
+                <span id="booking-service-error" class="error"></span>
+
+                <label for="booking-date">Preferred Date</label>
+                <input type="date" id="booking-date" name="booking-date" required>
+                <span id="booking-date-error" class="error"></span>
+
+                <label for="booking-time">Preferred Time</label>
+                <input type="time" id="booking-time" name="booking-time" required>
+                <span id="booking-time-error" class="error"></span>
+
+                <label for="booking-notes">Additional Notes</label>
+                <textarea id="booking-notes" name="booking-notes"></textarea>
+
+                <button type="submit" class="button">Book Appointment</button>
+            </form>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div>
+                <h4>Penelope Beauty Studio</h4>
+                <p>Pink, magical, and full of girly vibes! Let us help you shine 💖✨</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="enquiry.html">Enquiry & Booking</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/ec407a/facebook--v1.png" alt="Facebook" width="30">
+                    </a>
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/ec407a/instagram-new.png" alt="Instagram" width="30">
+                    </a>
+                    <!-- Twitter -->
+                    <a href="https://www.twitter.com" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/ec407a/twitter.png" alt="Twitter" width="30">
+                    </a>
+                    <!-- TikTok -->
+                    <a href="https://www.tiktok.com" target="_blank">
+                        <img src="https://img.icons8.com/ios-filled/50/ec407a/tiktok.png" alt="TikTok" width="30">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">&copy; 2025 Penelope Beauty Studio. All rights reserved.</div>
+    </footer>
+
+    <script>
+        // JavaScript for the section fade-in animation
+        const sections = document.querySelectorAll('section');
+        const options = {
+            root: null,
+            threshold: 0.1,
+            rootMargin: '0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // JavaScript to highlight the active link in the navigation
+        document.addEventListener("DOMContentLoaded", function() {
+            const navLinks = document.querySelectorAll('nav ul li a');
+            const currentPage = document.body.getAttribute('data-page') + '.html';
+            
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                } else if (link.getAttribute('href') === 'contact.html' && currentPage === 'contact.html') {
+                    // special case for the current page link
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Booking Modal Functionality
+        const bookNowBtn = document.getElementById('book-now-btn');
+        const bookingModal = document.getElementById('booking-modal');
+        const closeModal = document.querySelector('.close-modal');
+        
+        bookNowBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            bookingModal.style.display = 'flex';
+        });
+        
+        closeModal.addEventListener('click', function() {
+            bookingModal.style.display = 'none';
+        });
+        
+        window.addEventListener('click', function(e) {
+            if (e.target === bookingModal) {
+                bookingModal.style.display = 'none';
+            }
+        });
+
+        // Form Validation Functions
+        function validateName(name) {
+            const nameRegex = /^[a-zA-Z\s]{2,50}$/;
+            return nameRegex.test(name);
+        }
+        
+        function validateEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+        
+        function validatePhone(phone) {
+            const phoneRegex = /^[\+]?[1-9][\d]{0,15}$/;
+            return phoneRegex.test(phone.replace(/[\s\-\(\)]/g, ''));
+        }
+        
+        function validateRequired(value) {
+            return value.trim() !== '';
+        }
+        
+        function validateDate(date) {
+            const selectedDate = new Date(date);
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            return selectedDate >= today;
+        }
+        
+        function validateTime(time) {
+            return time !== '';
+        }
+        
+        function showError(elementId, message) {
+            const errorElement = document.getElementById(elementId);
+            errorElement.textContent = message;
+            errorElement.previousElementSibling.classList.add('input-error');
+        }
+        
+        function clearError(elementId) {
+            const errorElement = document.getElementById(elementId);
+            errorElement.textContent = '';
+            errorElement.previousElementSibling.classList.remove('input-error');
+        }
+        
+        // Contact Form Validation
+        const contactForm = document.getElementById('contact-form');
+        const successMessage = document.getElementById('success-message');
+        
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            let isValid = true;
+            
+            // Validate Name
+            const name = document.getElementById('name').value;
+            if (!validateName(name)) {
+                showError('name-error', 'Please enter a valid name (2-50 characters, letters only)');
+                isValid = false;
+            } else {
+                clearError('name-error');
+            }
+            
+            // Validate Email
+            const email = document.getElementById('email').value;
+            if (!validateEmail(email)) {
+                showError('email-error', 'Please enter a valid email address');
+                isValid = false;
+            } else {
+                clearError('email-error');
+            }
+            
+            // Validate Subject
+            const subject = document.getElementById('subject').value;
+            if (!validateRequired(subject)) {
+                showError('subject-error', 'Subject is required');
+                isValid = false;
+            } else {
+                clearError('subject-error');
+            }
+            
+            // Validate Message
+            const message = document.getElementById('message').value;
+            if (!validateRequired(message)) {
+                showError('message-error', 'Message is required');
+                isValid = false;
+            } else {
+                clearError('message-error');
+            }
+            
+            if (isValid) {
+                // In a real application, you would send the form data to a server here
+                // For demonstration, we'll just show a success message
+                successMessage.style.display = 'block';
+                contactForm.reset();
+                
+                // Hide success message after 5 seconds
+                setTimeout(function() {
+                    successMessage.style.display = 'none';
+                }, 5000);
+            }
+        });
+        
+        // Booking Form Validation
+        const bookingForm = document.getElementById('booking-form');
+        
+        bookingForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            let isValid = true;
+            
+            // Validate Name
+            const bookingName = document.getElementById('booking-name').value;
+            if (!validateName(bookingName)) {
+                showError('booking-name-error', 'Please enter a valid name (2-50 characters, letters only)');
+                isValid = false;
+            } else {
+                clearError('booking-name-error');
+            }
+            
+            // Validate Email
+            const bookingEmail = document.getElementById('booking-email').value;
+            if (!validateEmail(bookingEmail)) {
+                showError('booking-email-error', 'Please enter a valid email address');
+                isValid = false;
+            } else {
+                clearError('booking-email-error');
+            }
+            
+            // Validate Phone
+            const bookingPhone = document.getElementById('booking-phone').value;
+            if (!validatePhone(bookingPhone)) {
+                showError('booking-phone-error', 'Please enter a valid phone number');
+                isValid = false;
+            } else {
+                clearError('booking-phone-error');
+            }
+            
+            // Validate Service
+            const bookingService = document.getElementById('booking-service').value;
+            if (!validateRequired(bookingService)) {
+                showError('booking-service-error', 'Please select a service');
+                isValid = false;
+            } else {
+                clearError('booking-service-error');
+            }
+            
+            // Validate Date
+            const bookingDate = document.getElementById('booking-date').value;
+            if (!validateRequired(bookingDate)) {
+                showError('booking-date-error', 'Please select a date');
+                isValid = false;
+            } else if (!validateDate(bookingDate)) {
+                showError('booking-date-error', 'Please select a future date');
+                isValid = false;
+            } else {
+                clearError('booking-date-error');
+            }
+            
+            // Validate Time
+            const bookingTime = document.getElementById('booking-time').value;
+            if (!validateTime(bookingTime)) {
+                showError('booking-time-error', 'Please select a time');
+                isValid = false;
+            } else {
+                clearError('booking-time-error');
+            }
+            
+            if (isValid) {
+                // In a real application, you would send the booking data to a server here
+                alert('Thank you for your booking! We will contact you soon to confirm your appointment.');
+                bookingForm.reset();
+                bookingModal.style.display = 'none';
+            }
+        });
+        
+        // Set minimum date for booking to today
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('booking-date').setAttribute('min', today);
+    </script>
+</body>
+</html>
